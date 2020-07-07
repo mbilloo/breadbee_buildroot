@@ -16,9 +16,9 @@ BUILDROOT_RESCUE_ARGS=BR2_DEFCONFIG=../br2breadbee/configs/breadbee_rescue_defco
 PKGS_BB=$(foreach dir,$(wildcard br2breadbee/package/*/),$(shell basename $(dir)))
 PKGS_APPS=$(foreach dir,$(wildcard br2apps/package/*/),$(shell basename $(dir)))
 
-UBOOT_BRANCH=mstar
+UBOOT_BRANCH=m5iplwork
 
-LINUX_BRANCH=msc313e_dev_v5_8_rebase_cleanup
+LINUX_BRANCH=mstar_dev_v5_8_rebase_cleanup
 
 # try to guess the interface for tftp
 ifeq ($(TFTP_INTERFACE),)
